@@ -2,44 +2,53 @@
 
 use Illuminate\Database\Seeder;
 
-class ArabicServicesTableSeeder extends Seeder
+class ArabicservicesTableSeeder extends Seeder
 {
+
     /**
-     * Run the database seeds.
+     * Auto generated seed file
      *
      * @return void
      */
     public function run()
     {
-        DB::table('arabicservices')->insert([
+        
 
-            [
-                'title' => 'لا تبدأ مشروعك',
-                'description' => '<p>كتاب مخصص لكل من يريد أن يبدأ مشروعه الخاص</p>
-                <p>يعرض الكتاب مجموعة من المعلومات الأساسية التي يجب على كل صاحب مشروع أن يكون ملم بها حتى يتفادى أي عقبات قد تكون في طريق نجاحه</p>',
-                'arabicmenu_id' => '5',
-                'image' => 'd5dc55720596ecbfca4cd702479dd72d.jpg',
-                'created_at' => date('Y-m-d H:i:s'),
-                'updated_at' => date('Y-m-d H:i:s'),
-            ],
-            [
-                'name' => 'دورة إنشاء المشاريع الصغيرة',
-                'description' => '<p><strong>نبذة عن الدورة</strong><br /><br /><strong>هل تخطط لإنشاء مشروعك الخاص ؟</strong><br /><br /><strong>سجل في دورة إنشاء المشاريع الصغيرة لتتعلم التالي:</strong><br /><br /><strong>اختيار المشروع المناسب:</strong><br /><br />ماهو المشروع المناسب لك كمبادر ؟ اذا كنت تحتار بين مشاريع متعددة كيف تختار أفضل خيار لتبدأ به مشروعك الخاص ؟<br /><br /><strong>توظيف فريق العمل:</strong><br /><br />تعلم كيف تبحث عن فريق العمل وتقوم بإجراء المقابلات وتختار فريق عمل مناسب لمشروعك ؟<br /><br /><strong>تسويق المشروع:</strong><br /><br />كيف تقوم بعملية تسويق ناجحه تستهدف بها الشريحة المناسبة لمشروعك ؟<br /><br /><strong>إدارة المبيعات:</strong><br /><br />كيف تقوم بالعمل على نظام مبيعات مناسب لنمو الشركة ؟<br /><br /><strong>الوقت:</strong><br /><br />كيف تدير وقتك بشكل مناسب باستخدام طرق تواصل وعقد اجتماعات فعالة.<br /><br /><strong>لمن هذه الدورة ؟</strong><br /><br />لكل شخص يخطط لإنشاء مشروعه الخاص ، سواء كان مشروع جديد أو في طور النمو.<br /><br /><strong>على ماذا يحصل المتدرب ؟</strong><br /><br />معلومات وتمارين عملية عن كيفية إنشاء مشروعه الخاص ابتداءً من اختيار اسم المشروع وطرق التسويق والمبيعات وإدارة الوقت ، وتشمل الدورة تطبيقات عملية على كل مرحلة من مراحل المشروع ، كما يحصل المتدرب على دعم خاص لإنشاء مشروعه من خدمات شركة أصحاب الأفكار<br /><br /><strong>ماذا لو لم يستفيد المتدرب من الدورة ؟</strong><br /><br />في هذه الحالة سيتم استرجاع رسوم التسجيل بالكامل حسب الشروط<br /><br /><br />@MubarakALesmail</p>',
-                'arabicmenu_id' => '4',
-                'image' => '10fe9ebedcd2caab3945f9befe5c957d.jpeg',
-                'created_at' => date('Y-m-d H:i:s'),
-                'updated_at' => date('Y-m-d H:i:s'),
-            ],
-            [
-                'name' =>'دورة إنشاء المشاريع الصغيرة',
-                'description' => '<p><strong>نبذة عن الدورة</strong><br /><br /><strong>هل تخطط لإنشاء مشروعك الخاص ؟</strong><br /><br /><strong>سجل في دورة إنشاء المشاريع الصغيرة لتتعلم التالي:</strong><br /><br /><strong>اختيار المشروع المناسب:</strong><br /><br />ماهو المشروع المناسب لك كمبادر ؟ اذا كنت تحتار بين مشاريع متعددة كيف تختار أفضل خيار لتبدأ به مشروعك الخاص ؟<br /><br /><strong>توظيف فريق العمل:</strong><br /><br />تعلم كيف تبحث عن فريق العمل وتقوم بإجراء المقابلات وتختار فريق عمل مناسب لمشروعك ؟<br /><br /><strong>تسويق المشروع:</strong><br /><br />كيف تقوم بعملية تسويق ناجحه تستهدف بها الشريحة المناسبة لمشروعك ؟<br /><br /><strong>إدارة المبيعات:</strong><br /><br />كيف تقوم بالعمل على نظام مبيعات مناسب لنمو الشركة ؟<br /><br /><strong>الوقت:</strong><br /><br />كيف تدير وقتك بشكل مناسب باستخدام طرق تواصل وعقد اجتماعات فعالة.<br /><br /><strong>لمن هذه الدورة ؟</strong><br /><br />لكل شخص يخطط لإنشاء مشروعه الخاص ، سواء كان مشروع جديد أو في طور النمو.<br /><br /><strong>على ماذا يحصل المتدرب ؟</strong><br /><br />معلومات وتمارين عملية عن كيفية إنشاء مشروعه الخاص ابتداءً من اختيار اسم المشروع وطرق التسويق والمبيعات وإدارة الوقت ، وتشمل الدورة تطبيقات عملية على كل مرحلة من مراحل المشروع ، كما يحصل المتدرب على دعم خاص لإنشاء مشروعه من خدمات شركة أصحاب الأفكار<br /><br /><strong>ماذا لو لم يستفيد المتدرب من الدورة ؟</strong><br /><br />في هذه الحالة سيتم استرجاع رسوم التسجيل بالكامل حسب الشروط<br /><br /><br />@MubarakALesmail</p>',
-                'arabicmenu_id' => '4',
-                'image' => 'eaf99d1344afd3c823b6efac1390fccc.jpeg',
-                'created_at' => date('Y-m-d H:i:s'),
-                'updated_at' => date('Y-m-d H:i:s'),
-            ]
-
-        ]);
-
+        \DB::table('arabicservices')->delete();
+        
+        \DB::table('arabicservices')->insert(array (
+            0 => 
+            array (
+                'arabicmenu_id' => 4,
+                'id' => 1,
+                'title' => 'Coming Soon',
+                'description' => '<p>Coming Soon</p>',
+                'image' => '8210206c19ba8b71be9a76270bdb3029.png',
+                'created_at' => '2019-03-13 14:52:23',
+                'updated_at' => '2019-03-13 15:31:03',
+            ),
+            1 => 
+            array (
+                'arabicmenu_id' => 4,
+                'id' => 2,
+                'title' => 'Coming Soon',
+                'description' => '<p>Coming Soon</p>',
+                'image' => '495009529e9a86d49a0e3cd6b7ccccf3.png',
+                'created_at' => '2019-03-13 14:52:23',
+                'updated_at' => '2019-03-13 15:31:52',
+            ),
+            2 => 
+            array (
+                'arabicmenu_id' => 4,
+                'id' => 3,
+                'title' => 'Coming Soon',
+                'description' => '<p>Coming Soon</p>',
+                'image' => '7d0afab10436fc9554993259eac1a795.png',
+                'created_at' => '2019-03-13 14:52:23',
+                'updated_at' => '2019-03-13 15:32:06',
+            ),
+        ));
+        
+        
     }
 }
