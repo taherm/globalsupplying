@@ -5,14 +5,14 @@
     <title>Globalsupplying</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="{{asset('/css/bootstrap.min.css')}}">
-    <!--  <link rel="stylesheet" href="{{asset('/css/bootstrap-rtl.min.css')}}"> -->
+    <link rel="stylesheet" href="<?php echo e(asset('/css/bootstrap.min.css')); ?>">
+    <!--  <link rel="stylesheet" href="<?php echo e(asset('/css/bootstrap-rtl.min.css')); ?>"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="{{asset('/css/style.css')}}">
+    <link rel="stylesheet" href="<?php echo e(asset('/css/style.css')); ?>">
     <link href="https://fonts.googleapis.com/css?family=Cairo:600" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script src="{{asset('/js/bootstrap.min.js')}}"></script>
-    <script src="{{asset('/js/instafeed.min.js')}}"></script>
+    <script src="<?php echo e(asset('/js/bootstrap.min.js')); ?>"></script>
+    <script src="<?php echo e(asset('/js/instafeed.min.js')); ?>"></script>
 </head>
 
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
@@ -52,23 +52,7 @@
                         </li> -->
 
 
-                        {{-- @foreach($cat as $item)
-                        @if($item->services->count())
-                        <li class="dropdown">
-                            <a href="" onclick="return false" class="dropdown-toggle disabled" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false">{{$item->title}} <i class="fa fa-angle-down"></i></a>
-                        <ul class="dropdown-menu">
-                            @foreach($item->services as $submenu)
-                            <li><a href="{{url('services'.'/'.$submenu->id)}}">{{$submenu->title}}</a></li>
-                            @endforeach
-                        </ul>
-                        </li>
-
-
-
-                        @else
-                        <li><a href="">{{$item->title}}</a></li>
-                        @endif
-                        @endforeach --}}
+                        
 
 
 
@@ -107,7 +91,7 @@
         <hr>
 
 
-        @yield('content')
+        <?php echo $__env->yieldContent('content'); ?>
 
         <!-- Footer -->
         <footer class="text-center">
@@ -135,7 +119,7 @@
             limit: '8',
             resolution: 'low_resolution',
             accessToken: '201923325.1677ed0.1bd411c16d6948a8914cae259664e804',
-            template: '  <div class="col-sm-3"><a href="@{{link}}"><img src="@{{image}}" class="img-thumbnail img-responsive"/></a> </div>'
+            template: '  <div class="col-sm-3"><a href="{{link}}"><img src="{{image}}" class="img-thumbnail img-responsive"/></a> </div>'
         });
         feed.run();
     </script>
