@@ -88,7 +88,7 @@
 
                         </li>
                         <li class="">
-                            <a class="nav-link" href="/">
+                            <a class="nav-link" href="/contact-ar">
                                 Contact Us
                             </a>
 

@@ -10,11 +10,11 @@
 
 <body>
     <h1> GlobalSupplying Contact Us</h1>
-    <p>From: {{$data['email']}}</p>
-    <p>Name: {{$data['name']}}</p>
-    <p>Mobile: {{$data['mobile']}}</p>
-    {{-- <p>Course: {{$data['select']}}</p> --}}
-    <p>Notes: {{$data['notes']}}</p>
+    <p>From: <?php echo e($data['email']); ?></p>
+    <p>Name: <?php echo e($data['name']); ?></p>
+    <p>Mobile: <?php echo e($data['mobile']); ?></p>
+    
+    <p>Notes: <?php echo e($data['notes']); ?></p>
 </body>
 
 </html> 

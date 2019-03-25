@@ -106,7 +106,7 @@
                                     <center>
                                         <h5 class="text-center">{{$s->title}}</h5>
                                     </center>
-                                    <center><a href="{{ url('services/'.$s->id) }}" class="btn btn-info btn-md text-center">اضغط هنا</a></center>
+                                    <center><a href="{{ url('services/'.$s->id) }}" class="btn btn-info btn-md text-center"> Click Here</a></center>
                                 </div>
 
                             </div>

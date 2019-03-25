@@ -7,7 +7,7 @@ use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Contracts\Queue\ShouldQueue;
 
-class reserve extends Mailable
+class contact extends Mailable
 {
     use Queueable, SerializesModels;
     public $data;
@@ -18,7 +18,7 @@ class reserve extends Mailable
      */
     public function __construct($data)
     {
-        $this->data=$data;
+        $this->data = $data;
     }
 
     /**

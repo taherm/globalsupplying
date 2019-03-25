@@ -1,5 +1,4 @@
-@extends('layouts.master-ar')
-@section('content')
+<?php $__env->startSection('content'); ?>
 <section id="inner-headline">
     <div class="container">
         <div class="row">
@@ -22,8 +21,9 @@
 <div class="container">
     <div class="row">
         <div class="col-lg-6">
-            <form action="{{url('/reserve')}}" method="POST">
-                {{ csrf_field() }}
+            <form action="<?php echo e(url('/reserve')); ?>" method="POST">
+                <?php echo e(csrf_field()); ?>
+
                 <div class="form-group">
                     <label for="example-text-input" class="col-2 col-form-label">Name</label>
                     <input class="form-control" type="text" name="name" id="example-text-input">
@@ -53,4 +53,5 @@
     </div>
 </div>
 
-@endsection 
+<?php $__env->stopSection(); ?> 
+<?php echo $__env->make('layouts.master-ar', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
